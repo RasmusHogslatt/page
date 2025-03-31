@@ -53,6 +53,7 @@ export default function ProjectsSection({ id }: ProjectsSectionProps) {
       image: "/projects/mcpt.png",
       tags: ["C++", "3D-Rendering", "Mathematics"],
       github: "https://github.com/RasmusHogslatt/raytracer/tree/master",
+      report: "/reports/MCPT.pdf",
     },
     {
       title: "Water Simulation",
@@ -61,7 +62,7 @@ export default function ProjectsSection({ id }: ProjectsSectionProps) {
       tags: ["C++", "OpenGL", "Shader", "GLSL", "Rendering", "Mathematics"],
       github: "https://github.com/RasmusHogslatt/Procedural-waves",
       demo: "https://www.youtube.com/watch?v=N_k3nFntPOg&t=2s",
-      report: "https://rasmushogslatt.com/assets/pw.pdf",
+      report: "/reports/pw.pdf",
     },
     {
       title: "Flappy Bird Clone",
@@ -82,6 +83,7 @@ export default function ProjectsSection({ id }: ProjectsSectionProps) {
       description: "A program that converts an uploaded image into a lego mosaic and calculates pieces required to reproduce with actual bricks. Support multiple brick types. Color matching was done using CIELAB.",
       image: "/projects/legonization.png",
       tags: ["Matlab", "Image Processing", "TypeScript"],
+      report: "/reports/Legonization.pdf",
     },
     {
       title: "Multithreaded MD5-based password cracker",
