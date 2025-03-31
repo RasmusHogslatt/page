@@ -37,7 +37,7 @@ export default function ProjectsSection({ id }: ProjectsSectionProps) {
       tags: ["Rust", "C", "MR", "3D-graphics", "Android"],
       github: "https://github.com/yourusername/project-one",
       demo: "https://www.youtube.com/watch?v=vJKHNgr7sD4",
-      report: "/reports/thesis.pdf",
+      report: "/reports/MasterThesis.pdf",
     },
     {
       title: "Guitar Tablature App",
