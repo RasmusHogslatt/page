@@ -62,7 +62,7 @@ export default function Home() {
         <footer className="py-4 border-t mt-8 bg-card">
           <div className="container px-4 md:px-6 flex flex-col items-center justify-center gap-2 text-center md:flex-row md:justify-between">
             <p className="text-sm text-muted-foreground">
-              © {new Date().getFullYear()} Your Name. All rights reserved.
+              © {new Date().getFullYear()} Rasmus Hogslätt. All rights reserved.
             </p>
             <div className="flex gap-4">
               <Link href="https://github.com/RasmusHogslatt" className="text-muted-foreground hover:text-primary">
