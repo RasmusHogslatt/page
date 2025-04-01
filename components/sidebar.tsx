@@ -13,11 +13,8 @@ export default function Sidebar() {
     { name: "Hobbies", href: "#hobbies", icon: Coffee },
   ]
 
-  // Function to handle resume download
   const handleDownload = () => {
-    // Assuming the resume is located at /public/resume.pdf
-    // The path should not include 'public' as Next.js serves files from the public directory directly
-    window.open("/resume.pdf", "_blank")
+    window.open("/reports/CV.pdf", "_blank")
   }
 
   return (
