@@ -17,7 +17,7 @@ export default function EducationSection({ id }: EducationSectionProps) {
           <div>
             <h3 className="font-bold text-lg">Master's Degree in Technology of Media</h3>
             <p className="text-muted-foreground">Linköping University, 2024</p>
-            <p className="text-sm mt-2">Specialized in computer graphics and AI. Thesis: "Mixed reality for control and visualization of imminent path of vehicles"</p>
+            <p className="text-sm mt-2">Specialized in computer graphics and AI. This degree is similar to a typical computer science degree, albeit with higher emphasis on mathematics, graphics rendering and GPU computing and less so on the hardware of the CPU etc. During my last year I received a scholarship for academic performance."</p>
           </div>
         </CardContent>
       </Card>

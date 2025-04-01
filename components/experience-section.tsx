@@ -17,7 +17,7 @@ export default function ExperienceSection({ id }: ExperienceSectionProps) {
       description:
         "Developed backend code in Rust to speed up interactions with Azure Cosmos databases.\
          This involved handling large amounts of data interfacing with various APIs.\
-         I also created a library for handling time scheduling.",
+         I also created a library for handling scheduling and availability for stores etc..",
       skills: ["Rust", "Azure", "Javascript", "APIs", "Git"],
     },
     {
@@ -44,13 +44,13 @@ export default function ExperienceSection({ id }: ExperienceSectionProps) {
       period: "2018 - 2022",
       description:
         "Worked full time before university, assembling laser based measuring devices. Here I saw how all steps of the supply chain worked, given that everything everything was done in house.Throughout studies, I worked part time during summer as software developer.",
-      skills: ["C#", "Python", "Electronics"],
+      skills: ["C#", "Python", "Electronics", "Soldering"],
     },
     {
       title: "Math Assistant Teacher",
       company: "Linköping University",
       logo: "/images/logos/liu.png",
-      period: "2018 - 2022",
+      period: "2020 - 2021",
       description:
         "I assisted in teaching fundamental math, and single- and multivariable calculus for first year university students. This entailed having my own classes where I held presentations and students were able to ask me questions. I also assisted in coding courses, such as object oriented programming and immersive visualization.",
       skills: ["Math", "Teaching"],

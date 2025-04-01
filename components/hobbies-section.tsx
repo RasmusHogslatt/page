@@ -21,13 +21,13 @@ export default function HobbiesSection({ id }: HobbiesSectionProps) {
     { name: "solving Rubik's cubes", icon: Puzzle },
     { name: "playing the Guitar", icon: Guitar },
     { name: "reading books", icon: BookOpen },
-    { name: "collecting Donald Duck comics", icon: Coffee },
-    { name: "spending time with cats", icon: Cat },
+    { name: "reading Donald Duck comics", icon: Coffee },
+    { name: "spending time with my cat", icon: Cat },
     { name: "going to the gym", icon: Dumbbell },
     { name: "bicycling", icon: Bike },
     { name: "running", icon: Running },
     { name: "coding personal projects", icon: Code },
-    { name: "quality time with family", icon: Heart },
+    { name: "spending time with family", icon: Heart },
   ]
 
   return (

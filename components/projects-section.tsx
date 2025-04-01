@@ -35,7 +35,6 @@ export default function ProjectsSection({ id }: ProjectsSectionProps) {
       description: "Visualization and control of an RC car in Mixed Reality. Implemented in Rust, involving contributions to the open source Bevy Engine. This was part of my master's thesis.",
       image: "/projects/thesis.png",
       tags: ["Rust", "C", "MR", "3D-graphics", "Android"],
-      github: "https://github.com/yourusername/project-one",
       demo: "https://www.youtube.com/watch?v=vJKHNgr7sD4",
       report: "/reports/MasterThesis.pdf",
     },
@@ -96,7 +95,7 @@ export default function ProjectsSection({ id }: ProjectsSectionProps) {
       description: "For my first project in Rust, I implemented Conway's Game of Life. The user clicks on the tiles that should be active and then starts the simulation. It is fascinating how simple rules can produce very complex patterns.",
       image: "/projects/gameoflife.png",
       tags: ["Rust"],
-      github: "https://github.com/yourusername/game-of-life",
+      github: "https://github.com/RasmusHogslatt/GameOfLife",
     },
   ]
 

@@ -19,7 +19,7 @@ export default function AboutSection({ id }: AboutSectionProps) {
         </div>
         <div className="space-y-4">
           <p className="text-muted-foreground">
-            Hi there! I'm a software engineer in Sweden. My favorite programming language is Rust, but I am also
+            Hi there! I'm a software developer in Sweden. My favorite programming language is Rust, but I am also
             familiar with languages like C++, Java, Python, etc.
           </p>
           <p className="text-muted-foreground">

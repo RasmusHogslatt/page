@@ -1,7 +1,7 @@
 "use client"
 
 import Link from "next/link"
-import { User, Briefcase, FolderKanban, Coffee, GraduationCap } from "lucide-react"
+import { User, Briefcase, FolderKanban, Coffee, GraduationCap, Download } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 export default function Sidebar() {
@@ -12,6 +12,13 @@ export default function Sidebar() {
     { name: "Projects", href: "#projects", icon: FolderKanban },
     { name: "Hobbies", href: "#hobbies", icon: Coffee },
   ]
+
+  // Function to handle resume download
+  const handleDownload = () => {
+    // Assuming the resume is located at /public/resume.pdf
+    // The path should not include 'public' as Next.js serves files from the public directory directly
+    window.open("/resume.pdf", "_blank")
+  }
 
   return (
     <div className="fixed top-0 left-0 h-screen w-64 bg-card border-r border-border flex flex-col z-50">
@@ -35,9 +42,14 @@ export default function Sidebar() {
         </ul>
       </nav>
       <div className="p-4 border-t mt-auto">
-        <Button className="w-full">Download Resume</Button>
+        <Button
+          className="w-full flex items-center justify-center gap-2"
+          onClick={handleDownload}
+        >
+          <Download className="h-4 w-4" />
+          Download Resume
+        </Button>
       </div>
     </div>
   )
 }
-
