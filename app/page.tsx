@@ -65,13 +65,13 @@ export default function Home() {
               © {new Date().getFullYear()} Your Name. All rights reserved.
             </p>
             <div className="flex gap-4">
-              <Link href="https://github.com/yourusername" className="text-muted-foreground hover:text-primary">
+              <Link href="https://github.com/RasmusHogslatt" className="text-muted-foreground hover:text-primary">
                 GitHub
               </Link>
-              <Link href="https://linkedin.com/in/yourusername" className="text-muted-foreground hover:text-primary">
+              <Link href="https://www.linkedin.com/in/rasmushogslatt/" className="text-muted-foreground hover:text-primary">
                 LinkedIn
               </Link>
-              <Link href="mailto:your.email@example.com" className="text-muted-foreground hover:text-primary">
+              <Link href="mailto:r.hogslatt@gmail.com" className="text-muted-foreground hover:text-primary">
                 Email
               </Link>
             </div>
