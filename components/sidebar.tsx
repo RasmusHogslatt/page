@@ -1,10 +1,18 @@
 "use client"
 
+import { useEffect } from "react"
 import Link from "next/link"
-import { User, Briefcase, FolderKanban, Coffee, GraduationCap, Download } from "lucide-react"
+import { User, Briefcase, FolderKanban, Coffee, GraduationCap, Download, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { useMobile } from "@/hooks/use-mobile"
 
-export default function Sidebar() {
+interface SidebarProps {
+  isOpen: boolean
+  onClose: () => void
+}
+
+export default function Sidebar({ isOpen, onClose }: SidebarProps) {
+  const isMobile = useMobile()
   const navItems = [
     { name: "About", href: "#about", icon: User },
     { name: "Education", href: "#education", icon: GraduationCap },
@@ -13,12 +21,30 @@ export default function Sidebar() {
     { name: "Hobbies", href: "#hobbies", icon: Coffee },
   ]
 
+  useEffect(() => {
+    if (!isMobile && isOpen) {
+      onClose()
+    }
+  }, [isMobile, isOpen, onClose])
+
   const handleDownload = () => {
     window.open("/reports/CV.pdf", "_blank")
   }
 
   return (
-    <div className="fixed top-0 left-0 h-screen w-64 bg-card border-r border-border flex flex-col z-50">
+    <div
+      className={`fixed top-0 left-0 h-screen w-64 bg-card border-r border-border flex flex-col z-50 transition-transform duration-300 ${isMobile ? (isOpen ? 'translate-x-0' : '-translate-x-full') : ''
+        }`}
+    >
+      {/* Close Button for Mobile */}
+      {isMobile && (
+        <button
+          onClick={onClose}
+          className="absolute top-4 right-4 p-1 hover:bg-accent rounded-sm"
+        >
+          <X className="h-6 w-6" />
+        </button>
+      )}
       <div className="p-4 border-b">
         <h2 className="font-bold text-lg">Rasmus Hogslätt</h2>
         <p className="text-sm text-muted-foreground">Software developer</p>

@@ -31,10 +31,12 @@
   * {
     @apply border-border;
   }
+
   body {
     @apply bg-background text-foreground;
     font-family: "JetBrains Mono", monospace;
   }
+
   code {
     @apply bg-muted px-1 py-0.5 rounded text-sm;
   }
@@ -47,8 +49,10 @@
 
 /* Hide scrollbar for IE, Edge and Firefox */
 .scrollbar-hide {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
 }
 
 .section-container {
@@ -68,6 +72,16 @@
 }
 
 .main-content {
-  @apply ml-64;
+  @apply ml-0 md:ml-64;
+  /* Mobile-first margin */
 }
 
+@layer base {
+  body {
+    @apply overflow-x-hidden;
+  }
+
+  p {
+    @apply break-words;
+  }
+}

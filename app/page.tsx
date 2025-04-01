@@ -1,3 +1,6 @@
+"use client"
+
+import { useState } from "react"
 import Link from "next/link"
 import AboutSection from "@/components/about-section"
 import EducationSection from "@/components/education-section"
@@ -5,12 +8,26 @@ import ProjectsSection from "@/components/projects-section"
 import ExperienceSection from "@/components/experience-section"
 import HobbiesSection from "@/components/hobbies-section"
 import Sidebar from "@/components/sidebar"
+import { useMobile } from "@/hooks/use-mobile"
+import { Menu } from "lucide-react"
 
 export default function Home() {
+  const isMobile = useMobile()
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false)
+
   return (
     <div className="flex min-h-screen">
-      {/* Left Sidebar Navigation - Always visible */}
-      <Sidebar />
+      <Sidebar isOpen={isSidebarOpen} onClose={() => setIsSidebarOpen(false)} />
+
+      {/* Mobile Menu Button */}
+      {isMobile && (
+        <button
+          onClick={() => setIsSidebarOpen(true)}
+          className="fixed top-4 left-4 z-50 p-2 bg-card rounded-lg shadow-lg border border-border"
+        >
+          <Menu className="h-6 w-6" />
+        </button>
+      )}
 
       {/* Main Content */}
       <div className="main-content flex-1">
