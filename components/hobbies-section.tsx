@@ -9,6 +9,7 @@ import {
   Puzzle,
   BookOpen,
   Coffee,
+  Gauge,
 } from "lucide-react"
 
 interface HobbiesSectionProps {
@@ -25,7 +26,7 @@ export default function HobbiesSection({ id }: HobbiesSectionProps) {
     { name: "spending time with my cat", icon: Cat },
     { name: "going to the gym", icon: Dumbbell },
     { name: "bicycling", icon: Bike },
-    { name: "running", icon: Running },
+    { name: "running", icon: Gauge },
     { name: "coding personal projects", icon: Code },
     { name: "spending time with family", icon: Heart },
   ]
