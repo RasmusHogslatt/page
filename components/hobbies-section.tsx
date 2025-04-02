@@ -28,7 +28,7 @@ export default function HobbiesSection({ id }: HobbiesSectionProps) {
     { name: "bicycling", icon: Bike },
     { name: "running", icon: Gauge },
     { name: "coding personal projects", icon: Code },
-    { name: "spending time with family", icon: Heart },
+    { name: "spending time with family and friends", icon: Heart },
   ]
 
   return (
